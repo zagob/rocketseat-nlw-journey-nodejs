@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "084c0ff6-cfa0-4a25-af4a-065a8541f8d1",
+		"name": "Activities",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31806858"
+	},
+	"item": [
+		{
+			"name": "Create activity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Academia\",\n    \"occurs_at\": \"2024-07-12 09:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/trips/11d90173-8d3d-48e9-874f-ef935b8f22e9/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips",
+						"11d90173-8d3d-48e9-874f-ef935b8f22e9",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get activities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/trips/11d90173-8d3d-48e9-874f-ef935b8f22e9/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips",
+						"11d90173-8d3d-48e9-874f-ef935b8f22e9",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

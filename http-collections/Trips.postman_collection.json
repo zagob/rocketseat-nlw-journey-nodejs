@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "54c0707a-6e5f-42eb-a8e3-1fcbdaf917ee",
+		"name": "Trips",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31806858"
+	},
+	"item": [
+		{
+			"name": "Create trip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"destination\": \"Florianopolis\",\n    \"starts_at\": \"2024-07-11 18:00:00\",\n    \"ends_at\": \"2024-07-22 18:00:00\",\n    \"owner_name\": \"Matheus Zago\",\n    \"owner_email\": \"theus@gmail.com\",\n    \"emails_to_invite\": [\n        \"diego@rocketseat.com\",\n        \"johndoe@gmail.com\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/trips",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update trip",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"destination\": \"Miami\",\n    \"starts_at\": \"2024-07-11 18:00:00\",\n    \"ends_at\": \"2024-07-22 18:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/trips/11d90173-8d3d-48e9-874f-ef935b8f22e9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips",
+						"11d90173-8d3d-48e9-874f-ef935b8f22e9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get trip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"destination\": \"Florianopolis\",\n    \"starts_at\": \"2024-07-11 18:00:00\",\n    \"ends_at\": \"2024-07-22 18:00:00\",\n    \"owner_name\": \"Matheus Zago\",\n    \"owner_email\": \"theus@gmail.com\",\n    \"emails_to_invite\": [\n        \"diego@rocketseat.com\",\n        \"johndoe@gmail.com\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/trips",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm trip",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/trips/11d90173-8d3d-48e9-874f-ef935b8f22e9/confirm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips",
+						"11d90173-8d3d-48e9-874f-ef935b8f22e9",
+						"confirm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm participant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/participants/6c83860b-7d85-4608-b2c1-94a440d10941/confirm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"participants",
+						"6c83860b-7d85-4608-b2c1-94a440d10941",
+						"confirm"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "d2690ce1-6407-44de-b21f-8e9561e3072a",
+		"name": "Links",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31806858"
+	},
+	"item": [
+		{
+			"name": "Create link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Email\",\n    \"url\": \"https://www.gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/trips/11d90173-8d3d-48e9-874f-ef935b8f22e9/link",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips",
+						"11d90173-8d3d-48e9-874f-ef935b8f22e9",
+						"link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get links",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/trips/11d90173-8d3d-48e9-874f-ef935b8f22e9/links",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips",
+						"11d90173-8d3d-48e9-874f-ef935b8f22e9",
+						"links"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "e49ed281-5607-4d79-b9ba-a9ebdae0e41f",
+		"name": "Participants",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31806858"
+	},
+	"item": [
+		{
+			"name": "Get participants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/trips/11d90173-8d3d-48e9-874f-ef935b8f22e9/participants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips",
+						"11d90173-8d3d-48e9-874f-ef935b8f22e9",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get participant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/trips/11d90173-8d3d-48e9-874f-ef935b8f22e9/participants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips",
+						"11d90173-8d3d-48e9-874f-ef935b8f22e9",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create invite",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/trips/11d90173-8d3d-48e9-874f-ef935b8f22e9/participants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"trips",
+						"11d90173-8d3d-48e9-874f-ef935b8f22e9",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
